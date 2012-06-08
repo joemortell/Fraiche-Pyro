@@ -1,0 +1,191 @@
+
+/******************************************************
+
+				  Index Slideshow
+
+******************************************************/
+
+#slideshow {
+	width:961px;
+	margin-left: -40px;
+	background-color: #3F3F3F
+}
+
+#slideshow .portfolio {
+	background-color: #FFF;
+}
+
+.slides_container {
+	display:none;
+}
+
+.slides_container div {
+	width:940px;
+	height:330px;
+	display:block;
+}
+
+.slides_container div p {
+	width:500px;
+	height:330px;
+	display:block;
+	color: #FFF;
+	z-index: 500;
+}
+		
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:none;  /* display:block to reveal pagination*/
+	width:12px;
+	height:0;
+	background-image:url(../images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+#slides .next,#slides .prev {
+	position: absolute;
+	top: 120px;
+	margin-left: -14px;
+	width:39px;
+	height:81px;
+	display:block;
+	z-index: 101;
+}
+
+#slides .next {
+	margin-left: 936px;
+}
+
+#slides .next img {
+	clear: both;
+	float: right;
+}
+
+.caption {
+	z-index:500;
+	position: absolute;
+	font-size: 13px;
+}
+
+.caption p {
+	display: block;
+	width: 961px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+}
+
+.caption h1 {
+	width: 961px;
+	margin: 0 auto;
+	margin-top: 90px;
+	text-align: center;
+	font-size: 80px;
+	letter-spacing: -3px;
+	font-family: "museo-1", sans-serif;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.caption.right p {
+	display: block;
+	width: 350px;
+	margin-left: 533px;
+	margin-top: 0px;
+	text-align: right;
+	color: #FFF;
+}
+
+.caption.right h1 {
+	display:compact;
+	width: 300px;
+	margin-top: 25px;
+	margin-left: 580px;
+	text-align: right;
+}
+
+/******************************************************
+
+				   Project Page 
+
+******************************************************/
+
+
+#project .slides_container {
+	width: 580px;
+	overflow:hidden;
+	float:left;
+	position:relative;
+	display:none;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	width:580px;
+	height:274px;
+	display:block;
+}
+
+#project .next,#project .prev {
+	position:absolute;
+	top:50px;
+	left:0;
+	width:21px;
+	height:0;
+	padding-top:21px;
+	overflow:hidden;
+	display: none; !important /* Set to display:block*/
+	z-index:101;
+}
+
+#project .prev {
+	background:url(../images/arrow-prev.png);
+}
+
+#project .next {
+	left:398px;
+	background:url(../images/arrow-next.png);
+}
+
+#project .pagination {
+	width: 580px;
+	margin-top: -30px;
+	margin-left: -2px;
+	float:left;
+	margin-bottom: 40px;
+}
+
+#project .pagination li {
+	float:left;
+	margin:2px 3px;
+	list-style:none;
+}
+
+#project .pagination li a {
+	display:block;
+	width:60px;
+	height:60px;
+	margin:1px;
+	float:left;
+	background:#f9f9f9;
+}
+
+#project .pagination li.current a {
+	border:1px solid #CCC;
+	margin:0;
+	
+}

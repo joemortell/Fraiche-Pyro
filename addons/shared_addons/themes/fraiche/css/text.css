@@ -1,0 +1,43 @@
+body { font:11px/1.5 'Helvetica Neue', 'Verdana',Arial,'Liberation Sans',FreeSans,sans-serif }
+
+p, #small-links {
+	font-size: 11px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	color: #999;
+}
+
+a { color: #333; text-decoration: none; }
+a:focus { outline:1px dotted }
+
+hr {
+	border:				0 #ccc solid;
+	border-top-width:	1px;
+	clear:				both;
+	height:				0;
+}
+
+h1 { font-size:	25px }
+h2 { font-size:	23px }
+h3 { font-size:	21px }
+h4 { font-size:	19px }
+h5 { font-size:	17px }
+h6 { font-size:	15px }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+h2 
+{
+	font-size: 			21px;
+	color: 				#666;
+}
+h2.underline 
+{ 
+	border-bottom: 		1px dotted #CCC; 
+	padding:			0px 0px 10px 10px;
+	margin-bottom: 		20px;
+}
+
+ol { list-style:		decimal }
+ul { list-style:		disc }
+li { margin-left:		10px }

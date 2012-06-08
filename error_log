@@ -1,0 +1,12 @@
+[07-Jun-2012 15:33:46] PHP Fatal error:  Call to undefined function  css() in /home/fraiche/public_html/addons/default/modules/galleries/controllers/admin.php on line 183
+[07-Jun-2012 15:38:07] PHP Fatal error:  Cannot access protected property CI_DB_mysql_driver::$ar_where in /home/fraiche/public_html/addons/default/modules/galleries/models/gallery_image_m.php on line 87
+[07-Jun-2012 15:41:00] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/fraiche/img/favicon.png' in /home/fraiche/public_html/system/cms/libraries/Asset.php:1129
+Stack trace:
+#0 /home/fraiche/public_html/system/cms/libraries/Asset.php(781): Asset::find_files('theme::favicon....', 'img')
+#1 /home/fraiche/public_html/system/cms/libraries/Asset.php(757): Asset::get_filepath('favicon.png', 'img', true, false)
+#2 /home/fraiche/public_html/system/cms/plugins/theme.php(267): Asset::get_filepath_img('favicon.png', true)
+#3 /home/fraiche/public_html/system/cms/libraries/Plugins.php(221): Plugin_Theme->favicon()
+#4 /home/fraiche/public_html/system/cms/libraries/Plugins.php(132): Plugins->_process(Array)
+#5 /home/fraiche/public_html/system/cms/libraries/MY_Parser.php(123): Plugins->locate('system/cms/plug...', 'theme', 'favicon', Array, '')
+#6 /home/fraiche/public_html/system/cms/libraries/Lex/Parser.php(250): MY_Parser->parser_callback('theme:favicon', Array, '')
+#7 /home/fraiche/public_h in /home/fraiche/public_html/system/cms/libraries/Asset.php on line 1129

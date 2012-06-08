@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+body
+{
+	color:			#333;
+	background-image:url(../img/bg.png);
+}
+
+/******************************************************
+
+		Typography & Text styles in 'text.css'
+
+******************************************************/
+
+/******************************************************
+
+					   Forms
+
+******************************************************/
+form label
+{
+	float:			left;
+	min-width:		100%;
+        margin:                 7px 0 4px 0;
+}
+form ul, form ul li
+{
+	list-style-type:none;
+	margin:			0px 0px 10px 0px!important;
+	padding:		0px;
+}
+form input[type=text], form input[type=password], form textarea
+{
+	background-color:       #EEE;
+        border:                 0;
+	padding:		5px 3px 5px 3px;
+	width:			300px;
+}
+form textarea
+{
+        width:                  870px;
+}
+form input[type=checkbox]
+{
+	margin-right:	5px;
+}
+form select
+{
+	border:			1px solid #858585;
+	margin:			0px;
+	padding:		5px 3px 5px 3px;
+}
+form button, form input[type=submit], form input[type=reset], form input[type=reset]
+{
+	border:			1px solid #858585;
+	background:		#ededed;
+	margin:			0px;
+	min-width:		50px;
+	padding:		5px 3px 5px 3px;
+        margin:                 7px 0 4px 0;
+}
+/* Fieldsets */
+fieldset
+{
+	border: 		1px solid #ccc;
+	padding:		10px;
+}
+	fieldset legend
+	{
+		font-weight:	bold;
+	}
+	fieldset p:last-child
+	{
+		margin-bottom:	0px;
+	}
+/******************************************************
+
+					Other Stuff
+
+******************************************************/
+a, a:focus {
+        outline:        0;
+}
+input::-moz-focus-inner { border: 0; }
+pre
+{
+	white-space:	normal;
+}
+.code
+{
+	background:		#333;
+	color:			#99D16F;
+	overflow:		auto;
+	padding:		10px;
+	white-space:	pre;
+}
+blockquote
+{
+	border-left:	3px solid #ccc;
+	font-style:		italic;
+	margin-bottom:	20px;
+	padding-left:	10px;
+}
+.fancy_image
+{
+	border:			1px solid #ccc;
+	float:			left;
+	margin:			0px 15px 5px 0px;
+	padding:		5px;
+}
+.gravatar
+{
+	border:			1px solid #ccc;
+	float:			left;
+	margin:			0px 10px 10px 0px;
+	padding:		3px;
+}
+.dotted-border-top
+{
+        border-top:             1px dotted #CCC;
+        padding-top:            20px;
+}
+/******************************************************
+
+					   Layout
+
+******************************************************/
+
+/* Container */
+
+#container
+{
+	width: 			900px;
+	background-color: #FFF;
+	padding: 		30px;
+	margin-bottom: 20px;
+}
+
+/* General margins */
+
+#header,.blog_article, .gallery
+{
+	margin-bottom:	35px;
+}
+#header #site_info
+{
+	background: url(../img/logo.png) no-repeat 0px 50px;	
+}
+#header #site_info
+{
+	padding-bottom:	105px;
+	border-bottom:	1px dotted #CCC;
+}
+	#header #site_info h1
+	{
+		font-size:		32px;
+		margin-bottom:	0px;
+	}
+	#header #site_info p
+	{
+		margin:			0px;
+	}
+#header #small-links
+{
+	float: right;
+}
+	#header #small-links ul li
+	{
+		display: 		inline-block;
+		list-style: 	none;
+	}
+	#header #small-links ul li a
+	{
+		color: 			#CCC;
+	}
+	#header #small-links ul li a:hover
+	{
+		color: 			#666;
+	}
+#header #site_navigation {
+	position:		absolute;
+	width: 			880px;
+	margin-top: 	-60px;
+	z-index: 		1000;
+}
+
+	#header #site_navigation ul
+	{
+		height: 		auto;
+		overflow:		auto;
+	}
+	#header #site_navigation ul li
+	{
+		font-size:		32px;
+		letter-spacing: -1px;
+		float:			right;
+		margin:			7px 30px 0px 0px;
+		padding:		0px 0px 10px 0px;
+		list-style-type:none;
+	}
+	
+	#header #site_navigation ul li:first-child
+	{
+		margin: 7px 0px 0px 0px;
+	}
+		#header #site_navigation ul li a
+		{
+			border:			none;
+			padding:		5px 5px 0px 5px;
+			text-align:		center;
+		}
+		#header #site_navigation ul li.blue a { color: #09C; }
+		#header #site_navigation ul li.pink a { color: #F6C; }
+		#header #site_navigation ul li.orange a { color: #FC3; }
+		#header #site_navigation ul li a:hover, #header #site_navigation ul #active a
+		{ text-decoration:none; }
+		
+/* Content */
+
+#project-list p
+{
+	margin-top: 8px;
+}
+
+/******************************************************
+
+					Project Pages
+
+******************************************************/
+
+#project-info
+{ 
+	float: 		right;
+}
+	
+/******************************************************
+
+					   Widgets
+
+******************************************************/
+
+.widget
+{
+	margin-bottom:		35px;
+}
+	.widget h3
+	{
+		margin-bottom:	5px;
+	}
+	.widget ul, .widget ul li
+	{
+		list-style-type:none;
+		margin:			0px;
+		padding:		0px;
+	}
+	
+/******************************************************
+
+					   Blog
+
+******************************************************/
+
+.blog_article .article_heading h2
+{
+	margin-bottom:	5px;
+}
+.blog_article .article_heading .article_date
+{
+	float:		left;
+}
+.blog_article .article_heading .article_category
+{
+	float:		right;
+}
+.blog_article .article_body
+{
+	clear:		both;
+}
+
+/******************************************************
+
+					 Comments
+
+******************************************************/
+
+#comments_container
+{
+	margin-bottom:	20px;
+}
+.comment
+{
+	list-style-type:none;
+	margin:			0px;
+	padding:		0px;
+}
+	.comment .comment_heading, .comment .comment_date
+	{
+		margin:		0px;
+	}
+	.comment .comment_body
+	{
+		clear:		both;
+	}
+	
+/******************************************************
+
+					   Profiles
+
+******************************************************/
+
+#user_profile_container fieldset p
+{
+	margin-bottom:	5px;
+}
+#user_profile_container #page_title
+{
+	padding-top:	10px;
+}
+#user_profile_container .gravatar
+{
+	margin:			0px 15px 15px 0px;
+}
+#user_profile_container #user_details
+{
+	clear:			both;
+}
+
+/* Galleries */
+
+#gallery_index .gallery:last-child
+{
+	margin-bottom:		0px;
+}
+	.gallery .gallery_heading img
+	{
+		float:			left;
+		margin-right:	20px;
+	}
+	.gallery .galleries_list li
+	{
+		float:			left;
+		list-style-type:none;
+		margin:			0px 20px 20px 0px;
+	}
+	.gallery .galleries_list li a
+	{
+		border-bottom:	none;
+	}
+	.gallery .gallery_image_full
+	{
+		margin-bottom:	20px;
+	}
+	
+/******************************************************
+
+					   Footer
+
+******************************************************/
+
+#footer
+{
+	margin-top:		20px; 
+	margin-bottom:	        30px;
+	padding-top:	        25px;
+	color: 			#999;
+	font-size: 		11px;
+	line-height: 	        18px;
+}
+#copyright 
+{
+	height:			25px;
+	background: 	url(../img/small-grey-logo.png) no-repeat 5px 20px;
+	padding-top: 	20px;
+	font-size: 		10px;
+	color: 			#CCC;
+	display: 		block;
+	float: 			right;
+	border-top: 	1px dotted #CCC;
+	text-align:		right;
+}
+	#copyright a 
+	{
+		color: 			#CCC;
+		text-decoration:none; 
+	}
+	#copyright a:hover 
+	{
+		color: 			#999;
+	}

@@ -1,0 +1,34 @@
+<!-- Meta data -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+{{ template:metadata }}
+<title>{{ settings:site_name }}</title>
+
+<!-- CSS Stylesheets -->
+{{ theme:css file="reset.css" }}
+{{ theme:css file="text.css" }}
+{{ theme:css file="960.css" }}
+{{ theme:css file="main.css" }}
+{{ theme:css file="slides.css" }}
+
+<!-- Favicon -->
+{{ theme:favicon file="favicon.ico" }}
+
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="addons/shared_addons/themes/fraiche/js/slides.min.jquery.js"></script>
+<script src="addons/shared_addons/themes/fraiche/js/fade.js"></script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32282063-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
